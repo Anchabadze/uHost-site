@@ -92,9 +92,84 @@ body {
 
 /* Freedom styles end */
 
-
 /* Plan styles start */
 
+.plan {
+    background-color: #d5ffdc;
+    text-align: center;
+    padding: 16px;
+    margin: 8px;
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle; 
+}
 
+.section-title {
+    text-align: center;
+}
+
+.plans {
+    display: flex;
+    justify-content: space-around;
+}
+
+.plan--highlighted {
+    background-color: #19b84c;
+    color: white;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.plan--highlighted .plan__price {
+    color: #0e4f1f;
+}
+
+.plan--highlighted .plan__title {
+    color: white;
+}
+
+.plan__annotation {
+    background-color: white;
+    color: #19b84c;
+    padding: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.plan__title {
+    color: #0e4f1f;
+}
+
+.plan__price {
+    color: #858585;
+}
+
+.plan__features {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.plan__features li {
+    margin: 8px 0;
+}
+
+.button {
+    margin-top: 10px;
+    background-color: #0e4f1f;
+    color: white;
+    font: inherit;
+    border: 2px solid #0e4f1f;
+    padding: 8px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+    background-color: white;
+    color: #0e4f1f;
+} 
 
 /* Plan styles end */
