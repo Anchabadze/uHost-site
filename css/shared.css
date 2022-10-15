@@ -212,3 +212,7 @@ body {
   }
 
   /* Mobile nav styles end */
+
+  .open {
+    display: block !important;
+  }
