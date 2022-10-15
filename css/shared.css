@@ -52,7 +52,7 @@ body {
 .main-nav {
     display: inline-block;
     text-align: right;
-    width: calc(100% - 74px); 
+    width: calc(100% - 122px); 
     vertical-align: middle;
 }
 
@@ -67,6 +67,8 @@ body {
     vertical-align: middle;
 }
 
+/* Brand styles start */
+
 .main-header__brand {
     color: #0e4f1f;
     text-decoration: none;
@@ -74,18 +76,44 @@ body {
     font-size: 1.4rem; /* 22px */
     height: 1.4rem; /* 22px */
     display: inline-block;
+    vertical-align: middle;
 }
 
 .main-header__brand img {
    height: 100%;
 }
 
+.toggle-button {
+    width: 3rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding-top: 0;
+    padding-bottom: 0;
+    vertical-align: middle;
+  }
+  
+  .toggle-button:focus {
+    outline: none;
+  }
+  
+  .toggle-button__bar {
+    width: 100%;
+    height: 0.2rem;
+    background: black;
+    display: block;
+    margin: 0.6rem 0;
+  }
+  
+/* Brand styles end */
+
 .main-nav__item {
     display: inline-block;
     margin: 0 1rem;
 }
 
-.main-nav__item-link {
+.main-nav__item-link,
+.mobile-nav__item a {
     color: #0e4f1f;
     text-decoration: none;
     font-weight: bold;
@@ -99,7 +127,8 @@ body {
     border-bottom: 5px solid white;
 }
 
-.main-nav__item--cta a {
+.main-nav__item--cta a,
+.mobile-nav__item--cta a {
      color: white;
      background: #ff1b68;
      padding: 0.5rem 1rem;
@@ -108,7 +137,10 @@ body {
 
 .main-nav__item--cta a:hover,
 .main-nav__item--cta a:active,
-.main-nav__item--cta a:focus {
+.main-nav__item--cta a:focus,
+.mobile-nav__item--cta a:hover,
+.mobile-nav__item--cta a:active,
+.mobile-nav__item--cta a:focus {
     color: #ff1b68;
     background: white;
     border: none;
@@ -148,3 +180,35 @@ body {
 }
 
 /* Footer styles end */
+
+/* Mobile nav styles start */
+
+.mobile-nav {
+    display: none;
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    background: white;
+    width: 80%;
+    height: 100vh;
+  }
+  
+  .mobile-nav__items {
+    width: 90%;
+    height: 100%;
+    list-style: none;
+    margin: 10% auto;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .mobile-nav__item {
+    margin: 1rem 0;
+  }
+  
+  .mobile-nav__item a {
+    font-size: 1.5rem;
+  }
+
+  /* Mobile nav styles end */
