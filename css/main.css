@@ -2,7 +2,7 @@
 /* Freedom styles start */
 
 #product-overview {
-    background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent), url(/img/freedom.jpg) left 30% bottom 75%/cover no-repeat border-box, #ff1b68;
+    background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent), url(/img/freedom.jpg) center/cover no-repeat border-box, #ff1b68;
     width: 100vw;
     height: 60vh; /* 60% of the viewport */
     padding: 0.6rem;
@@ -201,19 +201,22 @@
 
 /* Конец стилей при ширине экрана 640px+ */
 
-/* Начало стилей при ширине экрана 960px+ */
+/* Начало стилей при ширине экрана меньше 704px */
 
-@media (min-width: 60rem) { 
-    #product-overview {
-        height: 80vh;
-        background-position: 50% 25%;
+@media (max-width: 44rem) { 
+    .plan {
+        display: block;
+        width: 100%;
+        margin: 0.5rem 0;
     }
 
-    #product-overview h1 {
-        font-size: 4rem;
-        bottom: 0.8rem;
-        margin: 0;
+    .plans {
+        width: 100%;
+    }
+
+    .plan--highlighted {
+        box-shadow: none;
     }
 }
 
-/* Конец стилей при ширине экрана 960px+ */
+/* Конец стилей при ширине экрана меньше 704px */
