@@ -4,7 +4,7 @@
 #product-overview {
     background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent), url(/img/freedom.jpg) left 30% bottom 75%/cover no-repeat border-box, #ff1b68;
     width: 100vw;
-    height: 60vh;
+    height: 60vh; /* 60% of the viewport */
     padding: 0.6rem;
     margin-top: 2.75rem;
     position: relative;
@@ -12,11 +12,16 @@
     /* background-image: radial-gradient(circle at top left, red, blue, green); */
 }
 
+.section-title {
+    text-align: center;
+}
+
 #product-overview h1 {
     color: white;
     font-family: 'Anton', sans-serif; 
+    font-size: 1.6rem;
     position: absolute;
-    bottom: 20px;
+    bottom: 1.6rem;
 }
 
 /* Freedom styles end */
@@ -31,10 +36,6 @@
     display: inline-block;
     width: 30%;
     vertical-align: middle; 
-}
-
-.section-title {
-    text-align: center;
 }
 
 .plans {
@@ -130,6 +131,8 @@
 
 /* Features styles end */
 
+/* Modal styles start */
+
 .modal {
     position: fixed;
     display: none;
@@ -178,3 +181,39 @@
     background: #ff5454;
     border-color: #ff5454;
   }
+
+  /* Modal styles end */
+
+  /* Начало стилей при ширине экрана 640px+ */
+
+@media (min-width: 40rem) { 
+    #product-overview {
+        height: 70vh;
+        background-position: 50% 25%;
+    }
+
+    #product-overview h1 {
+        font-size: 3rem;
+        bottom: 0.8rem;
+        margin: 0;
+    }
+}
+
+/* Конец стилей при ширине экрана 640px+ */
+
+/* Начало стилей при ширине экрана 960px+ */
+
+@media (min-width: 60rem) { 
+    #product-overview {
+        height: 80vh;
+        background-position: 50% 25%;
+    }
+
+    #product-overview h1 {
+        font-size: 4rem;
+        bottom: 0.8rem;
+        margin: 0;
+    }
+}
+
+/* Конец стилей при ширине экрана 960px+ */
