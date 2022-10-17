@@ -36,6 +36,8 @@
     display: inline-block;
     width: 30%;
     vertical-align: middle; 
+    min-width: 13rem;
+    max-width: 18.7rem;
 }
 
 .plans {
@@ -201,13 +203,15 @@
 
 /* Конец стилей при ширине экрана 640px+ */
 
-/* Начало стилей при ширине экрана меньше 704px */
+/* Начало стилей при ширине экрана меньше 851px */
 
-@media (max-width: 44rem) { 
+@media (max-width: 53.2rem) { 
     .plan {
         display: block;
         width: 100%;
         margin: 0.5rem 0;
+        min-width: none;
+        max-width: none;
     }
 
     .plans {
@@ -217,6 +221,11 @@
     .plan--highlighted {
         box-shadow: none;
     }
+
+    .key-feature {
+        display: block;
+        width: 100%;
+    }
 }
 
-/* Конец стилей при ширине экрана меньше 704px */
+/* Конец стилей при ширине экрана меньше 851px */

@@ -45,14 +45,14 @@ body {
     top: 0;
     left: 0;
     background: #2ddf5c;
-    padding: 0.5rem 1rem;
+    padding: 1rem 1rem;
     z-index: 1;
 }
 
 .main-nav {
     display: inline-block;
     text-align: right;
-    width: calc(100% - 122px); 
+    width: calc(100% - 44px); 
     vertical-align: middle;
 }
 
@@ -74,16 +74,16 @@ body {
     text-decoration: none;
     font-weight: bold;
     font-size: 1.4rem; /* 22px */
-    height: 1.4rem; /* 22px */
     display: inline-block;
     vertical-align: middle;
 }
 
 .main-header__brand img {
-   height: 100%;
+    height: 2.5rem;
 }
 
 .toggle-button {
+    display: none;
     width: 3rem;
     background: transparent;
     border: none;
@@ -216,3 +216,37 @@ body {
   .open {
     display: block !important;
   }
+
+  /* Styles start for width less than 576px (Apple iPhone 12 Pro Max (428px)) */
+
+  @media (max-width: 36rem) {
+
+    .main-header {
+        padding: 0.3rem 0;
+        height: 3.5rem;
+    }
+
+    .main-header__brand img {
+        height: 2.5rem;
+        margin-left: 1rem;
+    }
+
+    .toggle-button {
+        display: inline-block;
+    }
+
+    .main-nav__items {
+        display: none;
+    }
+
+    .main-header__brand {
+        height: auto;
+    }
+
+    .main-footer li {
+        display: block;
+        margin: 1rem 0;
+    }
+  }
+
+/* Styles end for width less than 576px */
