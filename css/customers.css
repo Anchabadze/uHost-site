@@ -1,6 +1,7 @@
 .testimonial {
     font-size: 1.2rem;
-    margin: 3rem 0; /* 16 * 3 = 48px */
+    margin: 3rem auto; /* 16 * 3 = 48px */
+    max-width: 93rem;
   }
   
   .testimonial__list {
@@ -9,7 +10,7 @@
   }
   
   .testimonial:first-of-type {
-    margin-top: 6rem; /* 16 * 6 = 96px */
+    margin-top: 5rem; /* 16 * 5 = 80px */
   }
 
   .testimonial__image-container {
@@ -65,6 +66,23 @@
   
   .testimonial__text {
     margin: 0.2rem;
+  }
+
+  @media (max-width: 36rem) {
+
+    .testimonial {
+      margin: 0;
+    }
+
+    .testimonial__image-container {
+      display: block;
+      width: 100%;
+    }
+
+    .testimonial__info {
+      display: block;
+      width: 100%;
+    }
   }
   
   
