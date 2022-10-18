@@ -45,7 +45,7 @@ body {
     top: 0;
     left: 0;
     background: #2ddf5c;
-    padding: 1rem 1rem;
+    padding-left: 0.6rem;
     z-index: 1;
 }
 
@@ -79,7 +79,9 @@ body {
 }
 
 .main-header__brand img {
-    height: 2.5rem;
+    position: relative;
+    height: 2.4rem;
+    top: 0.2rem;
 }
 
 .toggle-button {
@@ -222,12 +224,10 @@ body {
   @media (max-width: 36rem) {
 
     .main-header {
-        padding: 0.3rem 0;
-        height: 3.5rem;
+        height: 3rem;
     }
 
     .main-header__brand img {
-        height: 2.5rem;
         margin-left: 1rem;
     }
 
@@ -239,9 +239,6 @@ body {
         display: none;
     }
 
-    .main-header__brand {
-        height: auto;
-    }
 
     .main-footer li {
         display: block;
