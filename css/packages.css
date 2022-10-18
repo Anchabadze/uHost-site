@@ -1,6 +1,8 @@
 
 main {
     padding-top: 2rem;
+    margin: 3rem auto; /* 16 * 3 = 48px */
+    max-width: 93rem;
 }
 
 .background {
@@ -76,4 +78,10 @@ main {
 
 #premium .package__subtitle {
     color: #bbb;
+}
+
+@media (min-width: 93rem) {
+    .package {
+        border-left: 4px solid #0e4f1f;
+    }
 }
