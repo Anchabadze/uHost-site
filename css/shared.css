@@ -37,6 +37,17 @@ body {
     color: #0e4f1f;
 } 
 
+.button:focus {
+    outline: none;
+}
+
+.button[disabled] {
+    cursor: not-allowed;
+    border: rgb(138, 136, 136);
+    background: #ccc;
+    color: rgb(138, 136, 136);
+}
+
 /* Header styles start */
 
 .main-header {
