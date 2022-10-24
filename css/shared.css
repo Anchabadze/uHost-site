@@ -63,39 +63,27 @@ body {
     background: #2ddf5c;
     padding-left: 0.6rem;
     z-index: 1;
-}
-
-.main-nav {
-    display: inline-block;
-    text-align: right;
-    width: calc(100% - 44px); 
-    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .main-nav__items {
     margin: 0;
     padding: 0;
     list-style: none;
-}
-
-.main-header > div {
-    display: inline-block;
-    vertical-align: middle;
+    display: flex;
 }
 
 /* Brand styles start */
 
 .main-header__brand {
     color: #0e4f1f;
-    display: inline-block;
-    vertical-align: middle;
-    height: 2.5rem;
 }
 
 .main-header__brand img {
-    position: relative;
-    height: 2.4rem;
-    top: 0.4rem;
+    height: 2.5rem;
+    vertical-align: middle;
 }
 
 .toggle-button {
@@ -124,7 +112,6 @@ body {
 /* Brand styles end */
 
 .main-nav__item {
-    display: inline-block;
     margin: 0 1rem;
 }
 
