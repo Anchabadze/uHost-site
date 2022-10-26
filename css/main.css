@@ -28,28 +28,34 @@
 
 /* Plan styles start */
 
+.plans {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .plan {
     background-color: #d5ffdc;
     text-align: center;
     padding: 1rem;
     margin: 0.5rem;
-    display: inline-block;
     width: 30%;
-    vertical-align: middle; 
     min-width: 13rem;
     max-width: 18.7rem;
-}
-
-.plans {
-    width: 80%;
-    margin: auto;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 28rem;
 }
 
 .plan--highlighted {
     background-color: #19b84c;
     color: white;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    height: 30rem;
+    z-index: 50;
+
 }
 
 .plan--highlighted .plan__price {
