@@ -10,6 +10,7 @@
     position: relative;
     /* background-image: linear-gradient(to bottom, white 25%, blue 50%, red 80%) */
     /* background-image: radial-gradient(circle at top left, red, blue, green); */
+    background-position: 50% 25%;
 }
 
 .section-title {
@@ -19,9 +20,10 @@
 #product-overview h1 {
     color: white;
     font-family: 'Anton', sans-serif; 
-    font-size: 1.6rem;
+    font-size: 3rem;
     position: absolute;
-    bottom: 1.6rem;
+    bottom: 0.8rem;
+    margin: 0;
 }
 
 /* Freedom styles end */
@@ -111,13 +113,12 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .key-feature {
-    display: inline-block;
     width: 30%;
-    vertical-align: top;
 }
 
 .key-feature__img {
@@ -192,46 +193,42 @@
 
   /* Modal styles end */
 
-  /* Начало стилей при ширине экрана 640px+ */
+  /* Styles start for width less than 576px (Apple iPhone 12 Pro Max (428px)) */
 
-@media (min-width: 40rem) { 
+@media (max-width: 36rem) {
+
     #product-overview {
         height: 70vh;
         background-position: 50% 25%;
     }
 
     #product-overview h1 {
-        font-size: 3rem;
-        bottom: 0.8rem;
-        margin: 0;
+        font-size: 1.6rem;
+        bottom: 1.6rem;
     }
-}
+    
+    .key-feature__list {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    } 
+    
+    .plans {
+        display: block;
+    }
 
-/* Конец стилей при ширине экрана 640px+ */
-
-/* Начало стилей при ширине экрана меньше 851px */
-
-@media (max-width: 53.2rem) { 
     .plan {
         display: block;
         width: 100%;
         margin: 0.5rem 0;
-        min-width: none;
-        max-width: none;
-    }
-
-    .plans {
-        width: 100%;
+        height: 23rem;
     }
 
     .plan--highlighted {
         box-shadow: none;
+        height: 26rem;
     }
+    
+  }
 
-    .key-feature {
-        display: block;
-        width: 100%;
-    }
-}
-
-/* Конец стилей при ширине экрана меньше 851px */
+  /* Styles end for width less than 576px */
