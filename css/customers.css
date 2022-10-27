@@ -2,6 +2,9 @@
     font-size: 1.2rem;
     margin: 3rem auto; /* 16 * 3 = 48px */
     max-width: 93rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
   
   .testimonial__list {
@@ -29,8 +32,6 @@
   .testimonial__info {
     text-align: right;
     padding: 0.9rem;
-    display: inline-block;
-    vertical-align: middle;
     width: 30%
   }
   
@@ -72,6 +73,7 @@
 
     .testimonial {
       margin: 0;
+      display: block;
     }
 
     .testimonial__image-container {
