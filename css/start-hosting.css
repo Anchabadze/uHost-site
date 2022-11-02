@@ -87,14 +87,21 @@ main {
 @media (max-width: 36rem) {
 
 main {
-    padding-top: 4rem;
+    padding-top: 2rem;
 }
 
 .signup-form {
-    grid-template-columns: 10rem;
+    display: block;
+    
 }
 
+label {
+    margin: 1rem 0;
+}
 
+.signup-form__checkbox {
+    margin: 1rem 0;
+}
 
 
 }
