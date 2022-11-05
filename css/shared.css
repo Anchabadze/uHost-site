@@ -143,12 +143,17 @@ main {
     border-bottom: 5px solid white;
 }
 
+.main-nav__item--cta {
+    animation: wiggle 300ms 3s 8 ease-out none; /* анимация wiggle длится 0.2s с задержкой 3s и повторятся 8 раз после первого раза  */
+}
+
 .main-nav__item--cta a,
 .mobile-nav__item--cta a {
      color: white;
      background: #ff1b68;
      padding: 0.5rem 1rem;
      border-radius: 8px;
+
 }
 
 .main-nav__item--cta a:hover,
@@ -269,3 +274,19 @@ main {
   }
 
 /* Styles end for width less than 576px */
+
+/* Animation code start */
+
+@keyframes wiggle {
+    0% {
+        transform: rotateZ(0);
+    }
+    50% {
+        transform: rotateZ(-10deg);
+    }
+    100% {
+        transform: rotateZ(10deg);
+    }
+}
+
+/* Animation code end */
