@@ -2,6 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+/* Variables start */
+
+:root { /* all document */
+    --dark-green: #0e4f1f;
+    --highlight-color: #ff1b68;
+}
+
+/* Variables end */
+
 * {
     box-sizing: border-box;
 } 
@@ -37,10 +46,10 @@ main {
 
 .button {
     margin-top: 0.9rem; /* 10px */
-    background-color: #0e4f1f;
+    background-color: var(--dark-green, #0e4f1f);
     color: white;
     font: inherit;
-    border: 2px solid #0e4f1f;
+    border: 2px solid var(--dark-green);
     padding: 8px;
     border-radius: 10px;
     font-weight: bold;
@@ -51,7 +60,7 @@ main {
 .button:focus,
 .button:active {
     background-color: white;
-    color: #0e4f1f;
+    color: var(--dark-green);
 } 
 
 .button:focus {
@@ -91,7 +100,7 @@ main {
 /* Brand styles start */
 
 .main-header__brand {
-    color: #0e4f1f;
+    color: var(--dark-green);
 }
 
 .main-header__brand img {
@@ -130,7 +139,7 @@ main {
 
 .main-nav__item-link,
 .mobile-nav__item a {
-    color: #0e4f1f;
+    color: var(--dark-green);
     text-decoration: none;
     font-weight: bold;
     padding-bottom: 3px;
@@ -150,7 +159,7 @@ main {
 .main-nav__item--cta a,
 .mobile-nav__item--cta a {
      color: white;
-     background: #ff1b68;
+     background: var(--highlight-color);
      padding: 0.5rem 1rem;
      border-radius: 8px;
 
@@ -162,7 +171,7 @@ main {
 .mobile-nav__item--cta a:hover,
 .mobile-nav__item--cta a:active,
 .mobile-nav__item--cta a:focus {
-    color: #ff1b68;
+    color: var(--highlight-color);
     background: white;
     border: none;
 }
